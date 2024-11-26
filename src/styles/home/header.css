@@ -1,0 +1,222 @@
+.header-bgcolor {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+}
+
+.header-container .header-logo img {
+    width: 160px;
+    height: 70px;
+}
+
+.header-container .header-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+}
+
+.header-container .header-listBox,
+.header-container .header-locationPrice,
+.header-container .header-search,
+.header-container .header-phone,
+.header-container .header-locationDot,
+.header-container .header-truckDelivery,
+.header-container .header-shoppingBag {
+    display: flex;
+    align-items: center;
+    margin-right: 17px;
+}
+
+.header-container .header-listBox h2,
+.header-container .header-locationPrice h2,
+.header-container .header-locationDot h2,
+.header-container .header-truckDelivery h2,
+.header-container .header-shoppingBag h2,
+.header-container .header-userLogin h2 {
+    font-size: 12px;
+}
+
+.header-container .header-listBox>svg,
+.header-container .header-locationPrice>svg,
+.header-container .header-truckDelivery>svg,
+.header-container .header-shoppingBag>svg,
+.header-container .header-userLogin>svg,
+.header-container .header-locationPrice>svg,
+.header-container .header-phone>svg,
+.header-container .header-locationDot>svg {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.header-container .header-listBox,
+.header-container .header-locationPrice,
+.header-container .header-userLogin {
+    background-color: #ff7080;
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+
+.header-container .header-listBox {
+    position: absolute;
+    width: 110px;
+    height: 42px;
+    left: 180px;
+}
+
+.header-container .header-locationPrice {
+    width: 130px;
+    height: 39px;
+    position: absolute;
+    left: 310px;
+}
+
+.header-container .header-locationPrice div div {
+    display: flex;
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.header-container .header-locationPrice div div svg {
+    font-size: 15px;
+}
+
+.header-container .header-search {
+    background-color: #fff;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.header-container .header-search svg {
+    color: #000;
+    font-size: 15px;
+}
+
+.header-container .header-search input {
+    border: none;
+    outline: none;
+    padding: 8px 32px 8px 10px;
+    border-radius: 0 10px 10px 0;
+    width: 175px;
+}
+
+.header-container .header-phone div p {
+    width: 80px;
+}
+
+.header-container .header-locationDot h2 {
+    width: 70px;
+}
+
+.header-container .header-truckDelivery h2 {
+    width: 55px;
+}
+
+.header-container .header-userLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75px !important;
+}
+
+.header-container .header-userLogin h2 {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .header-container .header-search input {
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .header-container {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .header-container .header-logo {
+        margin-right: 270px;
+    }
+
+    .header-container .header-listBox {
+        margin: 0;
+    }
+
+    .header-container .header-locationPrice {
+        left: 300px;
+    }
+
+    .header-container .header-phone div p {
+        text-overflow: ellipsis;
+        width: 50px;
+        overflow: hidden;
+        text-wrap: nowrap;
+    }
+
+    .header-container .header-locationDot h2 {
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        width: 40px;
+        overflow: hidden;
+    }
+
+    .header-container .header-truckDelivery h2 {
+        text-wrap: nowrap;
+        width: 41px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .header-container .header-logo {
+        margin-right: 250px;
+    }
+
+    .header-container .header-listBox {
+        width: 95px;
+        left: 170px;
+    }
+
+    .header-container .header-locationPrice {
+        left: 275px;
+    }
+
+    .header-container .header-truckDelivery {
+        display: none;
+    }
+
+    .header-container .header-listBox,
+    .header-container .header-locationPrice,
+    .header-container .header-search,
+    .header-container .header-phone,
+    .header-container .header-locationDot,
+    .header-container .header-truckDelivery,
+    .header-container .header-shoppingBag {
+        margin-right: 10px;
+    }
+
+    .header-container .header-listBox svg,
+    .header-container .header-phone svg,
+    .header-container .header-locationDot svg,
+    .header-container .header-shoppingBag svg,
+    .header-container .header-userLogin svg {
+        font-size: 20px;
+    }
+
+}
